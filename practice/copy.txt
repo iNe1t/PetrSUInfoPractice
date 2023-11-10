@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(){
+	int counter = 0;
+	char c;
+	c = getchar();
+	while(c != EOF){
+		if(c == ' ' || c== '\t' || c== '\n')
+		 counter++;
+	putchar(c);
+	c = getchar();	
+}
+printf("В тексте обнаружено %d слов \n", counter);
+
+return 0;
+}
+В тексте обнаружено 56 слов 
